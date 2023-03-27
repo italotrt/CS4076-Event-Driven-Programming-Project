@@ -11,11 +11,12 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    recipe.cpp
+    recipemanager.cpp
 
 HEADERS += \
     mainwindow.h \
-    recipe.h
+    recipe.h \
+    recipemanager.h
 
 FORMS += \
     addrecipewindow.ui \

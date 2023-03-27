@@ -68,7 +68,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>120</y>
+      <y>270</y>
       <width>111</width>
       <height>21</height>
      </rect>
@@ -86,7 +86,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>150</y>
+      <y>300</y>
       <width>571</width>
       <height>211</height>
      </rect>
@@ -98,7 +98,7 @@
       <x>600</x>
       <y>50</y>
       <width>163</width>
-      <height>431</height>
+      <height>461</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -214,36 +214,64 @@
          </property>
         </widget>
        </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="caloriesHLayout">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
        <item>
-        <layout class="QHBoxLayout" name="caloriesHLayout">
-         <item>
-          <widget class="QLabel" name="caloriesLabel">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>Calories:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QDoubleSpinBox" name="caloriesDoubleSpinBox">
-           <property name="maximum">
-            <double>10000.000000000000000</double>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <widget class="QLabel" name="caloriesLabel">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Calories:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="caloriesDoubleSpinBox">
+         <property name="maximum">
+          <double>10000.000000000000000</double>
+         </property>
+        </widget>
        </item>
       </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="vegLabel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Suitable for Vegetarians?</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="vegetarianRB">
+       <property name="text">
+        <string>Vegetarian Recipes</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -251,7 +279,7 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>510</y>
+      <y>530</y>
       <width>171</width>
       <height>51</height>
      </rect>
@@ -263,8 +291,8 @@
    <widget class="QPushButton" name="cancelButton">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>510</y>
+      <x>460</x>
+      <y>530</y>
       <width>171</width>
       <height>51</height>
      </rect>
@@ -273,33 +301,24 @@
      <string>Cancel</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="vegetarianRB">
+   <widget class="QTextEdit" name="ingredientsTextEdit">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>410</y>
-      <width>162</width>
-      <height>20</height>
+      <x>10</x>
+      <y>140</y>
+      <width>571</width>
+      <height>121</height>
      </rect>
-    </property>
-    <property name="text">
-     <string>Vegetarian Recipes</string>
     </property>
    </widget>
-   <widget class="QLabel" name="titleLabel_2">
+   <widget class="QLabel" name="ingredientsLabel">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>380</y>
-      <width>160</width>
-      <height>16</height>
+      <y>110</y>
+      <width>111</width>
+      <height>21</height>
      </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
     </property>
     <property name="font">
      <font>
@@ -307,7 +326,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Suitable for Vegetarians?</string>
+     <string>Ingredients:</string>
     </property>
    </widget>
   </widget>

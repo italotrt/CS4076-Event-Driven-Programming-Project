@@ -49,42 +49,6 @@
      </rect>
     </property>
    </widget>
-   <widget class="QScrollArea" name="scrollArea">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>89</y>
-      <width>561</width>
-      <height>451</height>
-     </rect>
-    </property>
-    <property name="widgetResizable">
-     <bool>true</bool>
-    </property>
-    <widget class="QWidget" name="scrollAreaWidgetContents">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>559</width>
-       <height>449</height>
-      </rect>
-     </property>
-     <widget class="QScrollBar" name="verticalScrollBar">
-      <property name="geometry">
-       <rect>
-        <x>540</x>
-        <y>-1</y>
-        <width>20</width>
-        <height>461</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-     </widget>
-    </widget>
-   </widget>
    <widget class="QLabel" name="filterLabel">
     <property name="geometry">
      <rect>
@@ -113,10 +77,10 @@
       <x>589</x>
       <y>79</y>
       <width>191</width>
-      <height>461</height>
+      <height>341</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0,0,0,0,0">
+    <layout class="QGridLayout" name="filtersGridLayout" rowstretch="0,0,0,0,0">
      <item row="2" column="0">
       <widget class="QLabel" name="allergyLabel">
        <property name="sizePolicy">
@@ -268,6 +232,29 @@
       </layout>
      </item>
     </layout>
+   </widget>
+   <widget class="QPushButton" name="addButton">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>460</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create Recipe</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>91</y>
+      <width>551</width>
+      <height>421</height>
+     </rect>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
