@@ -1,17 +1,30 @@
 #include "recipemanager.h"
-#include <string>
-#include <vector>
 
-using namespace std;
+class RecipeManagerData : public QSharedData
+{
+public:
 
-RecipeManager::RecipeManager() {
-    // Initialize any necessary variables
+};
+
+RecipeManager::RecipeManager() : data(new RecipeManagerData)
+{
+
 }
 
-void RecipeManager::addRecipe(const QString& item) {
-    recipes.push_back(item);
+RecipeManager::RecipeManager(const RecipeManager &rhs)
+    : data{rhs.data}
+{
+
 }
 
-vector<QString> RecipeManager::getRecipes() const {
-    return recipes;
+RecipeManager &RecipeManager::operator=(const RecipeManager &rhs)
+{
+    if (this != &rhs)
+        data.operator=(rhs.data);
+    return *this;
+}
+
+RecipeManager::~RecipeManager()
+{
+
 }

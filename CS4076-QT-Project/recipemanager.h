@@ -1,24 +1,20 @@
 #ifndef RECIPEMANAGER_H
 #define RECIPEMANAGER_H
 
-#include <string>
-#include <vector>
-#include <QString>
+#include <QSharedDataPointer>
 
-using namespace std;
+class RecipeManagerData;
 
 class RecipeManager
 {
 public:
-  // Constructor
     RecipeManager();
-
-  // Public methods
-    void addRecipe(const QString& recipe);
-    vector<QString> getRecipes() const;
+    RecipeManager(const RecipeManager &);
+    RecipeManager &operator=(const RecipeManager &);
+    ~RecipeManager();
 
 private:
-    vector<QString> recipes;
+    QSharedDataPointer<RecipeManagerData> data;
 };
 
 #endif // RECIPEMANAGER_H

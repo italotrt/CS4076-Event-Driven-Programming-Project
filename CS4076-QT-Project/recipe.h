@@ -28,7 +28,8 @@ protected:
     QString rName;
     QString rDescription;
     QList<QString> rIngredients;
-    int calories;
+    int rCalories;
 };
+
 
 #endif // RECIPE_H
