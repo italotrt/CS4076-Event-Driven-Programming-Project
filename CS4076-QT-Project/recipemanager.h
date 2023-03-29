@@ -1,20 +1,18 @@
 #ifndef RECIPEMANAGER_H
 #define RECIPEMANAGER_H
 
-#include <QSharedDataPointer>
+#include "recipe.h"
 
-class RecipeManagerData;
-
-class RecipeManager
-{
-public:
-    RecipeManager();
-    RecipeManager(const RecipeManager &);
-    RecipeManager &operator=(const RecipeManager &);
-    ~RecipeManager();
-
+class RecipeManager {
 private:
-    QSharedDataPointer<RecipeManagerData> data;
+    static Recipe recipes[30];
+
+public:
+    static void addRecipe(const Recipe& newRecipe);
+    static void removeRecipe(const Recipe& delRecipe);
+    static void getRecipes();
+
+    ~RecipeManager() {}
 };
 
 #endif // RECIPEMANAGER_H

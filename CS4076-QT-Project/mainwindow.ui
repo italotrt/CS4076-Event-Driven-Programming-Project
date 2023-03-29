@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>791</width>
+    <height>577</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <rect>
       <x>10</x>
       <y>50</y>
-      <width>561</width>
+      <width>571</width>
       <height>31</height>
      </rect>
     </property>
@@ -28,7 +28,7 @@
     <property name="geometry">
      <rect>
       <x>630</x>
-      <y>50</y>
+      <y>90</y>
       <width>121</width>
       <height>16</height>
      </rect>
@@ -40,7 +40,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Filters</string>
+     <string>Filter</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -50,7 +50,7 @@
     <property name="geometry">
      <rect>
       <x>600</x>
-      <y>460</y>
+      <y>350</y>
       <width>171</width>
       <height>51</height>
      </rect>
@@ -89,41 +89,26 @@
      <rect>
       <x>15</x>
       <y>91</y>
-      <width>551</width>
+      <width>571</width>
       <height>421</height>
      </rect>
     </property>
    </widget>
-   <widget class="QWidget" name="gridLayoutWidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>589</x>
-      <y>79</y>
-      <width>191</width>
-      <height>341</height>
+      <x>610</x>
+      <y>130</y>
+      <width>160</width>
+      <height>181</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="filtersGridLayout" rowstretch="0,0,0,0,0">
-     <item row="2" column="0">
-      <widget class="QLabel" name="allergyLabel">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Allergy:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
       <layout class="QHBoxLayout" name="caloriesHLayout">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
        <item>
         <widget class="QLabel" name="caloriesLabel">
          <property name="sizePolicy">
@@ -151,7 +136,25 @@
        </item>
       </layout>
      </item>
-     <item row="1" column="0">
+     <item>
+      <widget class="QLabel" name="categoryLabel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Category:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <layout class="QVBoxLayout" name="categoryVLayout">
        <item>
         <widget class="QCheckBox" name="breakfastCB">
@@ -190,71 +193,20 @@
        </item>
       </layout>
      </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="categoryLabel">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="font">
-        <font>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Category:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <layout class="QVBoxLayout" name="allergyVLayout">
-       <item>
-        <widget class="QCheckBox" name="milkCB">
-         <property name="text">
-          <string>Milk</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QCheckBox" name="eggsCB">
-         <property name="text">
-          <string>Eggs</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QCheckBox" name="fishCB">
-         <property name="text">
-          <string>Fish</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QCheckBox" name="peanutsCB">
-         <property name="text">
-          <string>Peanuts</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QCheckBox" name="wheatCB">
-         <property name="text">
-          <string>Wheat</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QCheckBox" name="glutenCB">
-         <property name="text">
-          <string>Gluten</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
     </layout>
+   </widget>
+   <widget class="QPushButton" name="quitButton">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>430</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Quit</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -262,7 +214,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>791</width>
      <height>24</height>
     </rect>
    </property>

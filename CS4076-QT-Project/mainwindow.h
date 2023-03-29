@@ -19,6 +19,8 @@ public:
 private slots:
     void on_addButton_clicked();
 
+    void on_quitButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     AddRecipeWindow *addRecipeWindow;

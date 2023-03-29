@@ -1,35 +1,36 @@
 #ifndef RECIPE_H
 #define RECIPE_H
 
+#include "recipemanager.h"
 #include <QString>
-#include <QList>
 
 class Recipe {
 public:
-    Recipe(const QString& name, const QString& description, const QList<QString>& ingredients, const int& calories);
+    Recipe(const QString& name, const QString& description, const QString& ingredients, const int& calories);
 
-    virtual QString getName() const = 0;
-    virtual void setName(const QString& name) = 0;
+    QString getName();
+    void setName(const QString& name);
 
-    virtual QString getDescription() const = 0;
-    virtual void setDescription(const QString& description) = 0;
+    QString getDescription();
+    void setDescription(const QString& description);
 
-    virtual QList<QString> getIngredients() const = 0;
-    virtual void setIngredients(const QList<QString>& ingredients) = 0;
-    virtual void addIngredient(const QString& ingredient) = 0;
-    virtual void removeIngredient(const QString& ingredient) = 0;
+    QString getIngredients();
+    void setIngredients(const QString& ingredients);
 
-    virtual int getCalories() const = 0;
-    virtual void setCalories(int calories) = 0;
+    int getCalories();
+    void setCalories(const int& calories);
+
+    virtual void print();
 
     virtual ~Recipe() {}
 
-protected:
+private:
     QString rName;
     QString rDescription;
-    QList<QString> rIngredients;
+    QString rIngredients;
     int rCalories;
-};
 
+friend class RecipeManager;
+};
 
 #endif // RECIPE_H

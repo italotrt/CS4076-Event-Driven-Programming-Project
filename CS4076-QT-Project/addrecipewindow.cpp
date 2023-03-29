@@ -6,9 +6,15 @@ AddRecipeWindow::AddRecipeWindow(QWidget *parent) :
     ui(new Ui::AddRecipeWindow)
 {
     ui->setupUi(this);
+    this->setWindowTitle("Create Recipe");
 }
 
 AddRecipeWindow::~AddRecipeWindow()
 {
     delete ui;
+}
+
+void AddRecipeWindow::on_cancelButton_clicked()
+{
+    this->close();
 }

@@ -15,6 +15,9 @@ public:
     explicit AddRecipeWindow(QWidget *parent = nullptr);
     ~AddRecipeWindow();
 
+private slots:
+    void on_cancelButton_clicked();
+
 private:
     Ui::AddRecipeWindow *ui;
 };

@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setWindowTitle("Recipe Book");
 }
 
 MainWindow::~MainWindow()
@@ -16,5 +17,11 @@ void MainWindow::on_addButton_clicked()
 {
     addRecipeWindow = new AddRecipeWindow(this);
     addRecipeWindow->show();
+}
+
+
+void MainWindow::on_quitButton_clicked()
+{
+    exit(0);
 }
 

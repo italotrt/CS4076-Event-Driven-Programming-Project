@@ -24,6 +24,7 @@ set(PROJECT_SOURCES
         recipewindow.cpp
         recipewindow.h
         recipewindow.ui
+        recipe.cpp
         recipemanager.h
         recipemanager.cpp
 )

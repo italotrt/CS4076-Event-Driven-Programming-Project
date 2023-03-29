@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>70</y>
+     <y>90</y>
      <width>571</width>
      <height>31</height>
     </rect>
@@ -26,10 +26,10 @@
   <widget class="QWidget" name="verticalLayoutWidget_3">
    <property name="geometry">
     <rect>
-     <x>620</x>
-     <y>50</y>
+     <x>630</x>
+     <y>90</y>
      <width>163</width>
-     <height>461</height>
+     <height>291</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -81,67 +81,10 @@
         </property>
        </widget>
       </item>
-     </layout>
-    </item>
-    <item>
-     <widget class="QLabel" name="allergiesLabel_2">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="font">
-       <font>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Allergies Included:</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <layout class="QVBoxLayout" name="allergyVLayout_2">
       <item>
-       <widget class="QRadioButton" name="milkRB_2">
+       <widget class="QRadioButton" name="vegetarianRB_2">
         <property name="text">
-         <string>Milk</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="eggsRB_2">
-        <property name="text">
-         <string>Eggs</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="fishRB_2">
-        <property name="text">
-         <string>Fish</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="peanutsRB_2">
-        <property name="text">
-         <string>Peanuts</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="wheatRB_2">
-        <property name="text">
-         <string>Wheat</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="glutenRB_2">
-        <property name="text">
-         <string>Gluten</string>
+         <string>Vegetarian Recipes</string>
         </property>
        </widget>
       </item>
@@ -179,38 +122,13 @@
       </item>
      </layout>
     </item>
-    <item>
-     <widget class="QLabel" name="vegLabel_2">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="font">
-       <font>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Suitable for Vegetarians?</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QRadioButton" name="vegetarianRB_2">
-      <property name="text">
-       <string>Vegetarian Recipes</string>
-      </property>
-     </widget>
-    </item>
    </layout>
   </widget>
   <widget class="QTextEdit" name="ingredientsTextEdit">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>140</y>
+     <y>160</y>
      <width>571</width>
      <height>121</height>
     </rect>
@@ -242,7 +160,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>270</y>
+     <y>290</y>
      <width>111</width>
      <height>21</height>
     </rect>
@@ -260,7 +178,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>110</y>
+     <y>130</y>
      <width>111</width>
      <height>21</height>
     </rect>
@@ -278,7 +196,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>40</y>
+     <y>60</y>
      <width>111</width>
      <height>21</height>
     </rect>
@@ -296,17 +214,17 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>300</y>
+     <y>320</y>
      <width>571</width>
-     <height>211</height>
+     <height>251</height>
     </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="cancelButton">
    <property name="geometry">
     <rect>
-     <x>480</x>
-     <y>530</y>
+     <x>620</x>
+     <y>490</y>
      <width>171</width>
      <height>51</height>
     </rect>
@@ -318,8 +236,8 @@
   <widget class="QPushButton" name="addButton">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>530</y>
+     <x>620</x>
+     <y>410</y>
      <width>171</width>
      <height>51</height>
     </rect>
