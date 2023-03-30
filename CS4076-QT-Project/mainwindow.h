@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "addrecipewindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,8 +20,9 @@ private slots:
 
     void on_quitButton_clicked();
 
+    void on_breakfastRB_toggled(bool checked);
+
 private:
     Ui::MainWindow *ui;
-    AddRecipeWindow *addRecipeWindow;
 };
 #endif // MAINWINDOW_H

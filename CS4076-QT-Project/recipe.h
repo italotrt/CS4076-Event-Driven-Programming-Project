@@ -1,24 +1,27 @@
 #ifndef RECIPE_H
 #define RECIPE_H
 
-#include "recipemanager.h"
 #include <QString>
 
 class Recipe {
 public:
-    Recipe(const QString& name, const QString& description, const QString& ingredients, const int& calories);
+    Recipe(const QString& name, const QString& ingredients, const QString& instructions,
+           const double& calories, const QString& category);
 
     QString getName();
     void setName(const QString& name);
 
-    QString getDescription();
-    void setDescription(const QString& description);
-
     QString getIngredients();
     void setIngredients(const QString& ingredients);
 
+    QString getInstructions();
+    void setInstructions(const QString& instructions);
+
+    QString getCategory();
+    void setCategory(const QString& category);
+
     int getCalories();
-    void setCalories(const int& calories);
+    void setCalories(const double& calories);
 
     virtual void print();
 
@@ -26,9 +29,10 @@ public:
 
 private:
     QString rName;
-    QString rDescription;
     QString rIngredients;
-    int rCalories;
+    QString rInstructions;
+    QString rCategory;
+    double rCalories;
 
 friend class RecipeManager;
 };

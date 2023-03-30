@@ -18,15 +18,13 @@ set(PROJECT_SOURCES
         mainwindow.h
         mainwindow.ui
         recipe.h
-        addrecipewindow.h
-        addrecipewindow.cpp
-        addrecipewindow.ui
-        recipewindow.cpp
-        recipewindow.h
-        recipewindow.ui
         recipe.cpp
         recipemanager.h
         recipemanager.cpp
+        confirmation.h
+        confirmation.cpp
+        confirmation.ui
+        recipes.txt
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
