@@ -11,6 +11,14 @@ MainWindow::MainWindow(QWidget *parent)
     this->setWindowTitle("Recipe Creator");
 }
 
+MainWindow::MainWindow(RecipeManager manager)
+    : mRM(manager)
+    , ui(new Ui::MainWindow)
+{
+    ui->setupUi(this);
+    this->setWindowTitle("Recipe Creator");
+}
+
 MainWindow::~MainWindow()
 {
     delete ui;
@@ -35,7 +43,8 @@ void MainWindow::on_addButton_clicked()
                                                 ui->ingredientsTextEdit->toPlainText(),
                                                 ui->instructionsTextEdit->toPlainText(),
                                                 rCat,
-                                                ui->caloriesDoubleSpinBox->value());
+                                                ui->caloriesDoubleSpinBox->value(),
+                                                mRM);
     confWindow->setModal(true);
     confWindow->exec();
     delete confWindow;

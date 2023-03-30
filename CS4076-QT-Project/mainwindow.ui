@@ -30,7 +30,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Brazillian Recipe Creator</string>
+     <string>🇧🇷Brazilian Recipe Creator 🇧🇷</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

@@ -2,6 +2,7 @@
 #define CONFIRMATION_H
 
 #include <QDialog>
+#include "recipemanager.h"
 
 namespace Ui {
 class confirmation;
@@ -14,7 +15,8 @@ class confirmation : public QDialog
 public:
     explicit confirmation(QWidget *parent = nullptr);
     confirmation(QString rName, QString rIngredients,
-                 QString rInstruction, QString rCategory, double calories);
+                 QString rInstruction, QString rCategory,
+                 double calories, RecipeManager manager);
     ~confirmation();
 
 private slots:

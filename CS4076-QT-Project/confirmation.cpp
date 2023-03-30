@@ -12,11 +12,9 @@ confirmation::confirmation(QWidget *parent) :
 
 confirmation::confirmation(QString rName, QString rIngredients,
                            QString rInstruction, QString rCategory,
-                           double calories) :
+                           double calories, RecipeManager manager) :
     ui(new Ui::confirmation)
 {
-
-    RecipeManager manager;
     ui->setupUi(this);
     this->setWindowTitle("Your Recipe");
     ui->nameLabel->setText(rName);
@@ -26,12 +24,10 @@ confirmation::confirmation(QString rName, QString rIngredients,
     ui->caloriesDoubleSpinBox->setValue(calories);
 
     Recipe newRecipe = Recipe(rName, rIngredients, rInstruction, calories, rCategory);
-    // manager.addRecipe(newRecipe);
-    manager.saveRecipe(newRecipe);
+    manager.addRecipe(newRecipe);
+    manager.saveRecipe();
 }
 
-
-//, QString rName, QString rIngredients, QString rInstruction, QString rCategory, double rCalories
 confirmation::~confirmation()
 {
     delete ui;

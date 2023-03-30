@@ -1,32 +1,27 @@
 #include "recipemanager.h"
-/*
-QTextStream &operator<<( QTextStream &output, const Recipe &outRec) {
-    //output << ""
+
+RecipeManager::RecipeManager() {
+
 }
 
 void RecipeManager::addRecipe(const Recipe& newRecipe) {
     recipes.append(newRecipe);
 }
 
-void RecipeManager::saveRecipe(const Recipe& sRecipe) {
-    QSaveFile file("recipes.txt");
+void RecipeManager::saveRecipe() {
+    QFile file("/Users/italo/Documents/UL/Semester 4/CS4076 - Event Driven Programming/RecipeBook/recipes.txt");
     QTextStream out(&file);
 
-    for (int i = 0; i < recipes.size(); ++i) {
-       out << "Recipe Name: " << recipes[i].getName() << "\n";
-       out << "Recipe Description: " << recipes[i].getName() << "\n";
-       out << "Recipe Name: " << recipes[i].getName() << "\n";
+    file.open(QIODevice::Append | QIODevice::Text);
+
+    for (int i = 0; i < recipes.size(); i++) {
+        out << "Recipe's Title:\n" << recipes[i].getName() << "\n\n";
+        out << "Ingredients:\n" << recipes[i].getIngredients() << "\n\n";
+        out << "Instructions:\n" << recipes[i].getInstructions() << "\n\n";
+        out << "Category: " << recipes[i].getCategory() << "\n\n";
+        out << "Calories: " << recipes[i].getCalories() << "\n";
     }
+
+    out.flush();
+    file.close();
 }
-
-
-void RecipeManager::removeRecipe(const Recipe& delRecipe) {
-
-}
-
-string RecipeManager::getRecipes() {
-    for (int i = 0; i < 30; i++) {
-        cout << recipes[i] << endl;
-    }
-}
-*/
