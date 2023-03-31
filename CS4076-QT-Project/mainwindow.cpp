@@ -56,7 +56,6 @@ void MainWindow::on_addButton_clicked()
 
 void MainWindow::on_quitButton_clicked()
 {
-    // mRM.recipes.clear();
     exit(0);
 }
 
