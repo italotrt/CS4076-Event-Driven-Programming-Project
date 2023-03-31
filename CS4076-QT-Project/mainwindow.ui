@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>791</width>
-    <height>577</height>
+    <width>889</width>
+    <height>698</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>771</width>
+      <width>861</width>
       <height>31</height>
      </rect>
     </property>
@@ -42,9 +42,9 @@
    <widget class="QPushButton" name="quitButton">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>470</y>
-      <width>171</width>
+      <x>710</x>
+      <y>520</y>
+      <width>151</width>
       <height>51</height>
      </rect>
     </property>
@@ -73,10 +73,10 @@
    <widget class="QWidget" name="verticalLayoutWidget_3">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>110</y>
-      <width>163</width>
-      <height>171</height>
+      <x>710</x>
+      <y>160</y>
+      <width>151</width>
+      <height>201</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -213,9 +213,9 @@
    <widget class="QPushButton" name="addButton">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>400</y>
-      <width>171</width>
+      <x>710</x>
+      <y>450</y>
+      <width>151</width>
       <height>51</height>
      </rect>
     </property>
@@ -228,8 +228,8 @@
      <rect>
       <x>30</x>
       <y>330</y>
-      <width>551</width>
-      <height>211</height>
+      <width>651</width>
+      <height>331</height>
      </rect>
     </property>
     <property name="acceptRichText">
@@ -241,7 +241,7 @@
      <rect>
       <x>30</x>
       <y>170</y>
-      <width>551</width>
+      <width>651</width>
       <height>121</height>
      </rect>
     </property>
@@ -254,7 +254,7 @@
      <rect>
       <x>33</x>
       <y>93</y>
-      <width>551</width>
+      <width>651</width>
       <height>31</height>
      </rect>
     </property>
@@ -268,7 +268,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>791</width>
+     <width>889</width>
      <height>24</height>
     </rect>
    </property>
