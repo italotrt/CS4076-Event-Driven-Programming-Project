@@ -24,6 +24,7 @@ set(PROJECT_SOURCES
         confirmation.h
         confirmation.cpp
         confirmation.ui
+        exception.h
         recipes.txt
 )
 

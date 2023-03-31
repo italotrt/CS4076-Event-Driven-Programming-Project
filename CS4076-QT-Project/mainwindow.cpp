@@ -1,7 +1,9 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "confirmation.h"
+#include "exception.h"
 #include "recipemanager.h"
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -38,6 +40,17 @@ void MainWindow::on_addButton_clicked()
     if(din) rCat = "Dinner Recipe";
     if(des) rCat = "Dessert Recipe";
     if(veg) rCat = "Vegetarian Recipe";
+
+    try {
+        if (ui->textEdit->toPlainText() == "" || ui->ingredientsTextEdit->toPlainText() == "" || ui->instructionsTextEdit->toPlainText() == "") {
+            throw new Exception("Error");
+        }
+     } catch(Exception *e) {
+        QMessageBox popup;
+        popup.about(this, "Error", "Empty field found\n\nPlease fill the fields in order to create a recipe.");
+        popup.show();
+        return;
+    }
 
     confirmation *confWindow = new confirmation(ui->textEdit->toPlainText(),
                                                 ui->ingredientsTextEdit->toPlainText(),
