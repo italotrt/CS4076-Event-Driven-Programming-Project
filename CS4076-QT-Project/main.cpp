@@ -2,9 +2,10 @@
 #include "recipemanager.h"
 #include <QApplication>
 
+RecipeManager manager = RecipeManager();
+
 int main(int argc, char *argv[])
 {
-    RecipeManager manager = RecipeManager();
     QApplication a(argc, argv);
     MainWindow w = MainWindow(manager);
     w.show();

@@ -25,3 +25,17 @@ void RecipeManager::saveRecipe() {
     out.flush();
     file.close();
 }
+
+void RecipeManager::removeRecipe(Recipe& rDelete) {
+    for (int i = 0; i < recipes.size(); i++) {
+        if(recipes[i].getName() == rDelete.getName()
+                && recipes[i].getIngredients() == rDelete.getIngredients()
+                && recipes[i].getInstructions() == rDelete.getInstructions()
+                && recipes[i].getCategory() == rDelete.getCategory()
+                && recipes[i].getCalories() == rDelete.getCalories()) {
+            recipes.remove(i);
+        }
+    }
+}
+
+RecipeManager::~RecipeManager() {}

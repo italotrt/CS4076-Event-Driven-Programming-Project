@@ -47,11 +47,16 @@ void MainWindow::on_addButton_clicked()
                                                 mRM);
     confWindow->setModal(true);
     confWindow->exec();
+    ui->textEdit->clear();
+    ui->instructionsTextEdit->clear();
+    ui->ingredientsTextEdit->clear();
+    ui->caloriesDoubleSpinBox->setValue(0);
     delete confWindow;
 }
 
 void MainWindow::on_quitButton_clicked()
 {
+    // mRM.recipes.clear();
     exit(0);
 }
 

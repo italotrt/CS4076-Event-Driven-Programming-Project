@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="closeButton">
    <property name="geometry">
     <rect>
-     <x>540</x>
-     <y>480</y>
+     <x>530</x>
+     <y>490</y>
      <width>171</width>
      <height>51</height>
     </rect>
@@ -83,7 +83,7 @@
      <x>40</x>
      <y>310</y>
      <width>651</width>
-     <height>131</height>
+     <height>161</height>
     </rect>
    </property>
    <property name="text">
@@ -118,7 +118,7 @@
      <x>40</x>
      <y>130</y>
      <width>651</width>
-     <height>131</height>
+     <height>141</height>
     </rect>
    </property>
    <property name="text">
@@ -131,7 +131,7 @@
   <widget class="QLabel" name="categoryTitleLabel">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>30</x>
      <y>480</y>
      <width>81</width>
      <height>41</height>
@@ -150,7 +150,7 @@
   <widget class="QLabel" name="categoryLabel">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>120</x>
      <y>480</y>
      <width>131</width>
      <height>41</height>
@@ -166,7 +166,7 @@
   <widget class="QLabel" name="caloriesTitleLabel">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>260</x>
      <y>480</y>
      <width>81</width>
      <height>41</height>
@@ -185,7 +185,7 @@
   <widget class="QDoubleSpinBox" name="caloriesDoubleSpinBox">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>360</x>
      <y>490</y>
      <width>77</width>
      <height>21</height>

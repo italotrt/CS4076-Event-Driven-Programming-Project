@@ -8,16 +8,17 @@
 #include <QTextStream>
 
 class RecipeManager {
-protected:
-    QVector<Recipe> recipes;
-
 public:
     RecipeManager();
 
     void addRecipe(const Recipe& newRecipe);
+    void removeRecipe(Recipe& delRecipe);
     void saveRecipe();
 
-    ~RecipeManager() {}
+    ~RecipeManager();
+
+protected:
+    QVector<Recipe> recipes;
 };
 
 #endif // RECIPEMANAGER_H
